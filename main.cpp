@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <boost/filesystem.hpp>
+#include <boost/format.hpp>
 
 #include "bmca/consoleui.h"
 #include "AVLTree.h"
@@ -157,13 +158,17 @@ int main(int argc, char** argv) {
            }
     }
     //delete duplicates
-    else{
+    else if(BMCA::UI::getBoolInput((boost::format("Are you sure you want to delete %1% files?") % paths.size()).str())){
 
         for(boost::filesystem::path element : paths){
             std::cout << "Deleting: " << element.string() << std::endl;
             boost::filesystem::remove(element);
         }
     }
+    else
+        std::cout << "Delete Canceled" << std::endl;
+
+    std::cout << "Job Complete. Exiting..." << std::endl;
 
     return 0;
 }
