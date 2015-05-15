@@ -3,7 +3,7 @@
 #include <vector>
 #include <boost/filesystem.hpp>
 
-#include "consoleui.h"
+#include "bmca/consoleui.h"
 #include "AVLTree.h"
 
 struct File{
