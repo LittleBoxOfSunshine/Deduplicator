@@ -2,6 +2,7 @@
 Simple tool for safely and efficiently deal with duplicate local files
 
 Requires boost::filesystem to build
+
 Requires BMCA header-only library to build
 
 Compile with:
