@@ -1,5 +1,5 @@
 # Deduplicator
-Simple tool for safely and efficiently deal with duplicate local files
+Simple tool to safely and efficiently remove duplicate files from a local filesystem
 
 Requires boost::filesystem to build
 
