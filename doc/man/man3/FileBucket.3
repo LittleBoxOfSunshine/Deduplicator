@@ -1,0 +1,78 @@
+.TH "FileBucket" 3 "Sat Sep 26 2015" "Version 0.1" "Deduplicator" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FileBucket \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFileBucket\fP ()"
+.br
+.ti -1c
+.RI "\fBFileBucket\fP (int \fBsize\fP)"
+.br
+.ti -1c
+.RI "void \fBaddFile\fP (boost::filesystem::path path)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBFileBucket\fP &rhs)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBFileBucket\fP &rhs)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBsize\fP"
+.br
+.ti -1c
+.RI "std::vector< \fBFile\fP > \fBfiles\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 40 of file main\&.cpp\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "FileBucket::FileBucket ()\fC [inline]\fP"
+
+.PP
+Definition at line 44 of file main\&.cpp\&.
+.SS "FileBucket::FileBucket (int size)\fC [inline]\fP"
+
+.PP
+Definition at line 48 of file main\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void FileBucket::addFile (boost::filesystem::path path)\fC [inline]\fP"
+
+.PP
+Definition at line 52 of file main\&.cpp\&.
+.SS "bool FileBucket::operator< (const \fBFileBucket\fP & rhs)\fC [inline]\fP"
+
+.PP
+Definition at line 56 of file main\&.cpp\&.
+.SS "bool FileBucket::operator== (const \fBFileBucket\fP & rhs)\fC [inline]\fP"
+
+.PP
+Definition at line 60 of file main\&.cpp\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "std::vector<\fBFile\fP> FileBucket::files"
+
+.PP
+Definition at line 42 of file main\&.cpp\&.
+.SS "int FileBucket::size"
+
+.PP
+Definition at line 41 of file main\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Deduplicator from the source code\&.

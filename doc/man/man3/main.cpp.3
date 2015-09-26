@@ -1,0 +1,69 @@
+.TH "main.cpp" 3 "Sat Sep 26 2015" "Version 0.1" "Deduplicator" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include <boost/filesystem\&.hpp>\fP
+.br
+\fC#include <boost/format\&.hpp>\fP
+.br
+\fC#include 'bmca/consoleui\&.h'\fP
+.br
+\fC#include 'AVLTree\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBFile\fP"
+.br
+.ti -1c
+.RI "struct \fBFileBucket\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBfilterDuplicates\fP (std::vector< boost::filesystem::path > &paths, AVLNode< \fBFileBucket\fP > *file)"
+.br
+.RI "\fIFilters out duplicate paths, if removeDuplicates is true it will remove those files, if false it will only keep them (gives a list of files to delete for example) \fP"
+.ti -1c
+.RI "void \fBscanFiles\fP (AVLTree< \fBFileBucket\fP > &files, std::string rootPath, bool recursive)"
+.br
+.RI "\fIBuilds file objects for all files contained within the given directory\&. \fP"
+.ti -1c
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void filterDuplicates (std::vector< boost::filesystem::path > & paths, AVLNode< \fBFileBucket\fP > * file)"
+
+.PP
+Filters out duplicate paths, if removeDuplicates is true it will remove those files, if false it will only keep them (gives a list of files to delete for example) 
+.PP
+Definition at line 66 of file main\&.cpp\&.
+.SS "int main (int argc, char ** argv)"
+
+.PP
+Definition at line 127 of file main\&.cpp\&.
+.SS "void scanFiles (AVLTree< \fBFileBucket\fP > & files, std::string rootPath, bool recursive)"
+
+.PP
+Builds file objects for all files contained within the given directory\&. 
+.PP
+Definition at line 84 of file main\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Deduplicator from the source code\&.
